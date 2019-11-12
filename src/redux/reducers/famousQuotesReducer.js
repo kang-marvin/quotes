@@ -8,16 +8,14 @@ const famousQuotesReducer = (state = initialFamousPeopleQuotesState, action) => 
   switch(action.type) {
     case types.FAMOUS_PEOPLE_QUOTES_SUCCESS:
       return Object.assign({}, state, {
-        people: {
-          message: 'Famous Quotes Loaded'
-        }
+        ...state,
+        message: 'Famous Quotes Loaded'
       });
 
     case types.FAMOUS_PEOPLE_QUOTES_FAILURE:
       return Object.assign({}, state, {
-        people: {
-          message: 'Famous Quotes Not Loaded'
-        }
+        ...state,
+        message: 'Famous Quotes Not Loaded'
       });
 
     default:
