@@ -3,7 +3,7 @@ export const initialState = {
   famousQuotes: {
     people: {
       count: 0,
-      message: '',
+      message: 'Nothing is loaded. try again',
       data: []
     },
 
