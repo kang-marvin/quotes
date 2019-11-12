@@ -7,6 +7,12 @@ import * as quotesActions from '../../redux/actions/quotes/famousQuotesActions';
 
 import { initialState } from '../../data/initialState';
 
+import QuoteDisplay from '../../components/quotes/QuoteDisplayComponent';
+
+import '../../styles/quoteStyles.css';
+
+const DEFAULT_QUOTE_OBJECT = { color: '', quote: '', author: '', backgroundImage: '' };
+
 class QuotesComponent extends Component {
 
   constructor(props) {
@@ -22,9 +28,10 @@ class QuotesComponent extends Component {
 
     return (
       <div>
-        <p>Quotes.</p>
-        <p>{ `Count of available quotes is ${ count }` }</p>
-        <p>{ `Message is ${ message }` }</p>
+        <QuoteDisplay
+          /** Change the 0 number to be from user key press */
+          displayObject={ data[0] ? data[0] : DEFAULT_QUOTE_OBJECT }
+        />
       </div>
     );
   }

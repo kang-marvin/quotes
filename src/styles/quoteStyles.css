@@ -1,0 +1,16 @@
+
+.ui.grid {
+  background-color: black;
+  height: 40%;
+  left: 30%;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  width: 40%;
+}
+
+.quote-color-panel {
+  width: 1.5rem;
+  height: 100%;
+  border-radius: .2rem;
+}
