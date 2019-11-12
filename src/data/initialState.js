@@ -1,6 +1,11 @@
 export const initialState = {
-  /** Api Status */
-  apiStatus: {
-    message: ""
+  /** Quotes */
+  famousQuotes: {
+    people: {
+      count: 0,
+      message: '',
+      data: []
+    },
+
   }
 };
