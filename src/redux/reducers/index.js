@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-// API Status Reducer
-import apiStatus from "./apiStatusReducer";
+
+import famousQuotes from './famousQuotesReducer';
 
 const rootReducer = combineReducers({
-  apiStatus
+  famousQuotes
 });
 
 export default rootReducer;
