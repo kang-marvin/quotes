@@ -19,21 +19,55 @@ const QuoteDisplay = props => {
     )
   }
 
+  const OpeningQuotationTags = _ => {
+    return (
+      <span style={{ fontSize: '2rem' }}>&#10077;</span>
+    );
+  }
+
+  const ClosingQuotationTags = _ => {
+    return (
+      <span style={{ fontSize: '2rem' }}>&#10078;</span>
+    );
+  }
+
+  const QuotesAuthor = _ => {
+    return (
+      <span className="quote-authour">{ ` - ${ author }` }</span>
+    );
+  }
+
+  const QuotesText = _ => {
+    return (
+      <Fragment>
+        <OpeningQuotationTags />
+          { ` ${quote} ` }
+        <ClosingQuotationTags />
+      </Fragment>
+    );
+  }
+
   const ActualQuotePanel = _ => {
     return (
-      <>
-        <p style={{ color: 'white' }}>{ quote }</p>
-      </>
-    )
+      <div className="quote-statement-panel">
+        <p className="quote-statement">
+          <QuotesText />
+          <QuotesAuthor />
+        </p>
+      </div>
+    );
+
   }
 
   return (
-    <Grid className="quote-panel">
+    <Grid>
       <Grid.Column width={2}>
         <ColorPanel />
       </Grid.Column>
-      <Grid.Column width={9}>
-        {/* <ActualQuotePanel /> */}
+      <Grid.Column
+        width={14}
+        className="quote-panel">
+          <ActualQuotePanel />
       </Grid.Column>
     </Grid>
   );

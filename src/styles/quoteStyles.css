@@ -1,16 +1,51 @@
-
 .ui.grid {
   background-color: black;
+  width: 40%;
   height: 40%;
+  top: 30%;
   left: 30%;
   margin: 0 auto;
   position: absolute;
-  top: 30%;
-  width: 40%;
+}
+
+.quote-panel {
+  /* background-color: aqua; */
+  display: flex !important;
+  align-items: center;
 }
 
 .quote-color-panel {
   width: 1.5rem;
   height: 100%;
   border-radius: .2rem;
+}
+
+.quote-statement-panel {
+  color: aquamarine;
+  /* background-color: blue; */
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+.quote-statement-panel > .quote-statement {
+  font-size: 1.8vw;
+  font-weight: 700;
+  line-height: 1.4285em;
+}
+
+.quote-statement-panel >
+.quote-statement >
+.quote-authour {
+  font-size: 1.3vw;
+  font-weight: 400;
+  line-height: 1.4285em;
+}
+
+/* Testing css */
+
+.testing {
+  /* background-color: blue; */
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
 }
