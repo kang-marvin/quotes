@@ -1,15 +1,18 @@
-.ui.grid {
+body {
   background-color: black;
-  width: 40%;
-  height: 40%;
-  top: 30%;
-  left: 30%;
+  color: white;
+}
+
+.ui.grid {
+  width: 50%;
+  height: 25%;
+  top: 35%;
+  left: 28%;
   margin: 0 auto;
   position: absolute;
 }
 
 .quote-panel {
-  /* background-color: aqua; */
   display: flex !important;
   align-items: center;
 }
@@ -21,8 +24,6 @@
 }
 
 .quote-statement-panel {
-  color: aquamarine;
-  /* background-color: blue; */
   margin: 0 auto;
   display: inline-flex;
 }
@@ -39,13 +40,4 @@
   font-size: 1.3vw;
   font-weight: 400;
   line-height: 1.4285em;
-}
-
-/* Testing css */
-
-.testing {
-  /* background-color: blue; */
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
 }

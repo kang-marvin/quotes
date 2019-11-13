@@ -61,11 +61,12 @@ const QuoteDisplay = props => {
 
   return (
     <Grid>
-      <Grid.Column width={2}>
-        <ColorPanel />
+      <Grid.Column
+        width={1}>
+          <ColorPanel />
       </Grid.Column>
       <Grid.Column
-        width={14}
+        width={15}
         className="quote-panel">
           <ActualQuotePanel />
       </Grid.Column>
